@@ -5,30 +5,22 @@ on:
       - master
 jobs:
   build:
-    name: Build Web
-    env:
-      my_secret: ${{secrets.commit_secret}}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
     steps:
-      - uses: actions/checkout@v1
-      - uses: subosito/flutter-action@v1
-        with:
-          channel: 'dev'
-      - run: flutter config --enable-web
-      - run: flutter pub get
-      - run: flutter build web --release
-      - run: |
-          cd build/web
-          git init
-          # type configurations: your user.email and user.name followed lines 
-          # git config --global user.email your_email 
-          # git config --global user.name your_name 
-          git config --global user.email github.bellizari@gmail.com
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install Packages
+      run: npm install
+    - name: Deploy to GH Pages
+      run: |
+       git config --global user.email github.bellizari@gmail.com
           git config --global user.name rbellizari
           git status
-          # change this remote url for examle your remote url is https://github.com/rbellizari/dashboard-react.git then the following:
-          git remote add origin https://${{secrets.commit_secret}}@github.com/rbellizari/dashboard-react.git
-          git checkout -b gh-pages
-          git add --all
-          git commit -m "update"
-          git push origin gh-pages -f
+        git remote add origin https://${{secrets.commit_secret}}@github.com/rbellizari/dashboard-react.git
+        npm run deploy
