@@ -1,7 +1,7 @@
 import React from 'react'
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Line } from 'recharts';
 
-const data = [{name: 'SFH', value: 620}, {name: 'CHH', value: 220},  {name: 'CHC', value: 160},  {name: 'CHC', value: 160},  {name: 'CHC', value: 160},  {name: 'CHC', value: 160}
+const data = [{name: '12 a 24 meses', value: 620}, {name: '25 a 36 meses', value: 220},  {name: '37 a 60 meses', value: 160},  {name: '61 a 120 meses', value: 160},  {name: '121 a 240 meses', value: 160},  {name: '241 a 360 meses', value: 160}
                  ];
 const COLORS = ['#20a8d8', '#f86c6b', '#00C49F'];
 

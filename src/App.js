@@ -26,8 +26,11 @@ function App() {
 
         <Content>
           <BoxTitle>
+            <Title color="#20a8d8"> 
+              Operacional 
+            </Title>
             <Title>
-              Título
+              / Dashboard
             </Title>
           </BoxTitle>
           <Boxs>

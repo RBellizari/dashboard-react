@@ -19,15 +19,15 @@ export const Header = styled.div`
   box-sizing:border-box;
   z-index:1100;
   border-bottom: 1px solid #000;
+  color: #fff;
 `;
 
-export const Title = styled.div`
-  height:54px ;
-  background-color: #282C34;
-  flex:1;
-  box-sizing:border-box;
-  border-bottom: 1px solid #23282c;  
-`;
+export const Title = styled.span(props => ({
+  
+  color: props.color,
+  padding:'0 5px 0 0',
+  
+}));
 
 export const Menu = styled.div`
   min-height:100vh ;
@@ -55,9 +55,17 @@ export const Boxs = styled.div`
 export const BoxTitle = styled.div`
   display:flex;
   flex-direction:row;
-  background-color: #1c2025;
-  align-items: center;
+  background-color: #282C34;
+  align-items: left;
   margin: 0 0 20px 0;
+  color: #fff;
+  padding: 14px;
+  box-sizing:border-box;
+  border-bottom: 1px solid #000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: 200;  
+  
 `;
 
 export const Filter = styled.div`
