@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/dashboard-react/static/js/main.5ac1a0f5.chunk.js",
-    "main.js.map": "/dashboard-react/static/js/main.5ac1a0f5.chunk.js.map",
+    "main.js": "/dashboard-react/static/js/main.9d6b6b5c.chunk.js",
+    "main.js.map": "/dashboard-react/static/js/main.9d6b6b5c.chunk.js.map",
     "runtime-main.js": "/dashboard-react/static/js/runtime-main.fe52b526.js",
     "runtime-main.js.map": "/dashboard-react/static/js/runtime-main.fe52b526.js.map",
-    "static/js/2.8c424f65.chunk.js": "/dashboard-react/static/js/2.8c424f65.chunk.js",
-    "static/js/2.8c424f65.chunk.js.map": "/dashboard-react/static/js/2.8c424f65.chunk.js.map",
+    "static/js/2.e059c1a3.chunk.js": "/dashboard-react/static/js/2.e059c1a3.chunk.js",
+    "static/js/2.e059c1a3.chunk.js.map": "/dashboard-react/static/js/2.e059c1a3.chunk.js.map",
     "index.html": "/dashboard-react/index.html",
-    "precache-manifest.a9cb7557cc6fce6c7aaef00c8da0a16a.js": "/dashboard-react/precache-manifest.a9cb7557cc6fce6c7aaef00c8da0a16a.js",
+    "precache-manifest.eae7975b414d02539eaf4a0e66ee0eba.js": "/dashboard-react/precache-manifest.eae7975b414d02539eaf4a0e66ee0eba.js",
     "service-worker.js": "/dashboard-react/service-worker.js",
-    "static/js/2.8c424f65.chunk.js.LICENSE.txt": "/dashboard-react/static/js/2.8c424f65.chunk.js.LICENSE.txt",
+    "static/js/2.e059c1a3.chunk.js.LICENSE.txt": "/dashboard-react/static/js/2.e059c1a3.chunk.js.LICENSE.txt",
     "static/media/Roboto.woff": "/dashboard-react/static/media/Roboto.6747665c.woff",
     "static/media/Roboto.woff2": "/dashboard-react/static/media/Roboto.a2892520.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.fe52b526.js",
-    "static/js/2.8c424f65.chunk.js",
-    "static/js/main.5ac1a0f5.chunk.js"
+    "static/js/2.e059c1a3.chunk.js",
+    "static/js/main.9d6b6b5c.chunk.js"
   ]
 }
