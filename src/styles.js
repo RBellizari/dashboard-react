@@ -29,6 +29,21 @@ export const Title = styled.span(props => ({
   
 }));
 
+export const Label = styled.span(props => ({
+  flex:'1px',
+  color: props.color,
+  padding:'0 5px 0 0',
+  height:props.height,
+  fontSize:props.size,
+  textAlign:'center',
+  height:props.height,
+  fontWeight:'100',
+  fontFamily:'Roboto',
+  
+ 
+  
+}));
+
 export const Menu = styled.div`
   min-height:100vh ;
   flex:2;
@@ -88,6 +103,20 @@ export const Box = styled.div(props => ({
   fontFamily:'Roboto',
 }));
 
+export const Card = styled.div(props => ({
+  height:props.height,
+  flex:1,
+  background: props.background,
+  color:'#fff',
+  margin:'0 20px 0 0',
+  boxShadow: '0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)',
+  borderRadius:' .25rem',
+  alignItems:'center',
+  padding:'15px',
+  fontFamily:'Roboto',
+  fontWeight:'200'
+}));
+
 export const BoxGraph = styled.div(props => ({
   height:props.height,
   display:'flex',
@@ -109,11 +138,25 @@ export const Column = styled.div`
   align-items: center; 
 `;
 
+export const Line = styled.div`
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+
+`;
+
 export const Row = styled.div`
  flex:1;
  height:300px ;
  align-items: center; 
 `;
+
+
+export const RowLine = styled.div`
+ flex:1;
+ 
+`;
+
 
 
 
