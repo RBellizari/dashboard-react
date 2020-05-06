@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend, ResponsiveContainer
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer
 } from 'recharts';
 
 const data = [
